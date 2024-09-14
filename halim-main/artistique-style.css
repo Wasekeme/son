@@ -1,0 +1,532 @@
+:root {
+  --main: #F26623;
+  --black-color: #131212;
+  --green: #003B4C; /* Örnek renk tanımı */
+  --border: 0.1rem solid rgba(255, 255, 255, 0.4);
+}
+* {
+  font-size: var(--border);
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s ease;
+}
+/*! base html code */
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--main);
+  height: 600vh;
+}
+section {
+  padding: 3.5rem 7%;
+}
+.button {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 2rem 3.75rem;
+  border-radius: 25px;
+  font-size: 1.7rem;
+  color: #fff;
+  background-color: #F26623;
+  cursor: pointer;
+}
+.button:hover {
+  filter: drop-shadow(4px 4px 8px #003B4C);
+}
+
+body {
+  background-image: url("arkaplan.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+/*! base html code */
+
+/*! header  start */
+.header .logo img {
+  height: 10rem; /* Daha küçük bir boyut belirleyin */
+  max-width: 100%; /* Sayfa genişliğiyle sınırlı tutar */
+  display: block; /* Etrafındaki boşlukları ortadan kaldırır */
+  margin: 0 auto; /* Logoyu ortalar */
+}
+
+.header .buttons button  {
+  color: #b82121;
+  cursor: pointer;
+  font-size: 2.5rem;
+  margin-left: 2rem;
+  background-color: transparent !important;
+}
+.header .navbar a {
+  margin: 0 1rem;
+  font-size: 1.6rem;
+  color: #fff;
+  border-bottom: 0.2rem solid transparent;
+}
+
+.header .navbar :active,
+.header .navbar a:hover {
+  border-color: var(--main);
+}
+
+.header {
+  background-color: var(--green);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7%;
+  margin: 2rem;
+  border-radius: 3rem;
+  box-shadow: 10px 5px 15px #003B4C;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+/*! header  end */
+
+/*! home  start */
+.home {
+  min-height: 150vh;
+  background: url(DDD.jpg) no-repeat center center/cover;
+  margin-top: -14.5rem; /* veya -14.5px */
+  display: flex;
+  align-items: center;
+}
+
+.home .content h3 {
+  font-size: 4rem;
+  color: var(--green);
+}
+.home .content h3:hover {
+  filter: drop-shadow(12px 12px 12px white);
+}
+.home .content h4 {
+  font-size: 4rem;
+  color: var(--main);}
+
+.home .content p {
+  font-size: 1 rem;
+  color: var(--green);
+  font-weight: bolder;
+}
+
+.home .content p:hover {
+  filter: drop-shadow(12px 12px 12px white);
+}
+
+
+
+/*! home  end */
+
+/*! menu section start  */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Geçerli bir değer */
+  background-color: #F26623;
+}
+
+
+
+.home .content p {
+  font-size: 2.2rem;
+  color: var(--green);
+  font-weight: bolder;
+}
+
+.menu {
+  text-align: center;
+  padding: 50px 0;
+}
+
+
+.menu-item {
+  display: inline-block;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+  width: 250px; /* Kartların genişliğini artırdım */
+  height: 350px; /* Kartların yüksekliğini artırdım */
+  box-shadow: 0 0 10px #003B4C(0, 0, 0, 0.1);
+}
+
+.menu-item img {
+  width: 100%;
+  height: 150px; /* Resimlerin yüksekliğini sabitledim */
+  border-radius: 10px;
+}
+.menu h7 {
+  background-color:none; /* Beyaz renk ve %50 saydamlık */
+  padding: 20px; /* İçerik ile kutu kenarları arasındaki boşluk */
+  border-radius: 10px; /* Köşeleri yuvarlatır */
+  box-shadow: 0 4px 8px #003B4C; /* Hafif gölge efekti */
+}
+.menu-item h2 {
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+.menu-item p {
+  font-size: 15px;
+  color: #c5c2c2;
+}
+
+.menu-item button {
+  background-color: #F26623;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.menu-item button:hover {
+  background-color: #333;
+}
+
+.menu h6 {
+  font-size: 4rem; /* Başlık boyutu */
+  color: white; /* Başlık rengi */
+  text-align: left; /* Başlık hizalaması */
+  margin-bottom: 20px; /* Alt boşluk */
+  margin-left: 73px;
+  margin-right: 73px;
+  position: sticky; /* Çizgi için gerekli */
+  
+}
+
+.menu h6::after {
+  content: "";
+  display: block;
+  width: 100%; /* Çizginin genişliği */
+  height: 2px; /* Çizginin kalınlığı */
+  background-color: white; /* Çizginin rengi */
+  margin: 0 auto; /* Ortalamak için */
+  margin-top: 10px; /* Başlık ile çizgi arasındaki boşluk */}
+
+  .menu h5 {
+    font-size: 4rem; /* Başlık boyutu */
+    color: white; /* Başlık rengi */
+    text-align: left; /* Başlık hizalaması */
+    margin-bottom: 20px; /* Alt boşluk */
+    margin-left: 73px;
+    margin-right: 73px;
+    position: sticky; /* Çizgi için gerekli */
+    
+  }
+  
+  .menu h5::after {
+    content: "";
+    display: block;
+    width: 100%; /* Çizginin genişliği */
+    height: 2px; /* Çizginin kalınlığı */
+    background-color: white; /* Çizginin rengi */
+    margin: 0 auto; /* Ortalamak için */
+    margin-top: 10px; /* Başlık ile çizgi arasındaki boşluk */
+  }
+
+.menu h7 {
+    font-size: 4rem; /* Başlık boyutu */
+    color: white; /* Başlık rengi */
+    text-align: left; /* Başlık hizalaması */
+    margin-bottom: 20px; /* Alt boşluk */
+    margin-left: 73px;
+    margin-right: 73px;
+    position: absolute; /* Çizgi için gerekli */
+    
+  }
+  
+  .menu h7::after {
+    content: "";
+    display: block;
+    width: 100%; /* Çizginin genişliği */
+    height: 2px; /* Çizginin kalınlığı */
+    background-color: white; /* Çizginin rengi */
+    margin: 0 auto; /* Ortalamak için */
+    margin-top: 10px; /* Başlık ile çizgi arasındaki boşluk */}
+/*! menu section end  */
+
+/*!--------------------------------------------------------------------------------------------------*/
+/*!--------------------------------------------------------------------------------------------------*/
+/*!--------------------------------------------------------------------------------------------------*/
+
+/*! about section start  */
+
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  width: 89%;
+  margin: auto;
+}
+
+.content {
+  max-width: 600px;
+  padding: 20px;
+}
+
+.content h1 {
+  font-size: 5rem;
+  color: var(--main);
+  text-align: center;
+}
+
+.content h2 {
+  font-size: 2.5rem;
+  color: var(--green);
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 1.6rem;
+  color: var(--green)
+  margin-bottom 20px;
+}
+
+
+
+.content button {
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: #F26623;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.content button:hover {
+  background-color: #F26623;
+}
+
+.image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+/*! about section end  */
+
+/*!--------------------------------------------------------------------------------------------------*/
+/*!--------------------------------------------------------------------------------------------------*/
+/*!--------------------------------------------------------------------------------------------------*/
+
+
+/*!  yorum section start */
+
+
+.reviews {
+  text-align: center;
+  padding: 20px;
+}
+
+.reviews h1 {
+  font-size: 3rem;
+  color: white
+  margin-bottom 20px;
+}
+
+.review-card {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+  position: relative;
+}
+
+.quote {
+  font-size: 4rem;
+  color: #F26623;
+  position: absolute;
+  top: -20px;
+  left: 20px;
+}
+
+.review-card p {
+  font-size: 1.2rem;
+  color: #666;
+  margin: 20px 0;
+}
+
+.reviewer {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.reviewer img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.reviewer-info h2 {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 0;
+}
+
+.stars {
+  color: #F26623;
+  font-size: 1rem;
+}
+
+
+/*!  yorum section end */
+/*!--------------------------------------------------------------------------------------------------*/
+/*!--------------------------------------------------------------------------------------------------*/
+/*!--------------------------------------------------------------------------------------------------*/
+/*! CONTACT section START */
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  width: 89%;
+  margin-left: 69px;
+}
+
+.map {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.form {
+  flex: 1;
+  padding: 20px;
+}
+
+.form h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form label {
+  display: block;
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form button {
+  font-size: 1rem;
+  color: #fff;
+  background-color: #F26623;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: #F26623;
+}
+
+
+/*! CONTACT section end */
+/*!  MEDIA section START */
+
+header {
+  background-color:var(--green);
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  margin-top: 77px;
+}
+
+.search-bar {
+  margin-bottom: 10px;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 80%;
+  border: none;
+  border-radius: 5px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-media {
+  margin-top: 10px;
+}
+
+.social-media a {
+  margin: 0 10px;
+}
+
+.social-media img {
+  width: 30px;
+  height: 30px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+
+/*!  MEDIA section START */
